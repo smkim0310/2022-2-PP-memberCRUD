@@ -41,7 +41,7 @@ public class MemberFileUpload{
                 MemberDAO dao=new MemberDAO();
                 String oldfilename=dao.getPhotoFilename(Integer.parseInt(sid));
                 if(filename!=null&&oldfilename!=null) MemberFileUpload.deleteFile(request,oldfilename);
-                else if(filename==null&&oldfilename==null) filename=oldfilename;
+                else if(filename==null&&oldfilename!=null) filename=oldfilename;
             }
             one.setPhoto(filename);
         } catch (IOException e) {
