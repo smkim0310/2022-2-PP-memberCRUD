@@ -30,8 +30,8 @@
         <tr><td>User ID:</td><td><input type="text" id="userid" name="userid" value="${vo.getUserid()}"/></td></tr>
         <tr><td>User Name:</td><td><input type="text" id="username" name="username" value="${vo.getUsername()}"/></td></tr>
         <tr><td>Password:</td><td><input type="text" id="password" name="password" value="${vo.getPassword()}"></td></tr>
-        <tr><td>Photo:</td><td><input type="file" id="photo" name="photo" value="${vo.getPhoto()}" /><c:if test="${vo.getPhoto() ne ''}"><br/>
-            <img width="420" height="233" src="${pageContext.request.contextPath}/upload/${vo.getPhoto()}"></c:if></td></tr>
+        <tr><td>Photo:</td><td><input type="file" id="photo" name="photo" value="${vo.getPhoto()}" />
+            <c:if test="${vo.getPhoto() ne ''}"><br/><img src="${pageContext.request.contextPath}/upload/${vo.getPhoto()}" class="photo"></c:if></td></tr>
         <tr><td>Email:</td><td><input type="text" id="email" name="email" value="${vo.getEmail()}" /></td></tr>
         <tr><td>Blog URL:</td><td><input type="text" id="blogurl" name="blogurl" value="${vo.getBlogurl()}"></td></tr>
         <tr><td>Details:</td><td><textarea cols="50" rows="5" id="detail" name="detail">${vo.getDetail()}</textarea></td></tr>
