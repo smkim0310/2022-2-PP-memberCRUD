@@ -27,7 +27,7 @@
     <tr><td>Username: </td><td>${vo.getUsername()}</td></tr>
     <tr><td>Password: </td><td>${vo.getPassword()}</td></tr>
     <tr><td>Photo: </td><td><c:if test="${vo.getPhoto() ne ''}"><br/>
-      <img width="420" height="233" src="${pageContext.request.contextPath}/upload/${vo.getPhoto()}" class="photo"></c:if></td></tr>
+      <img src="${pageContext.request.contextPath}/upload/${vo.getPhoto()}" class="photo"></c:if></td></tr>
     <tr><td>Email: </td><td>${vo.getEmail()}</td></tr>
     <tr><td>Blog URL: </td><td>${vo.getBlogurl()}</td></tr>
     <tr><td>Detail: </td><td>${vo.getDetail()}</td></tr>
